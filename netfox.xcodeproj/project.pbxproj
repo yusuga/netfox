@@ -58,6 +58,8 @@
 		B3F8D6821C833B1700F9FBEA /* NFXResponseTypeCell_OSX.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3F8D6781C833B1700F9FBEA /* NFXResponseTypeCell_OSX.xib */; };
 		B3F8D6831C833B1700F9FBEA /* NFXSettingsController_OSX.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F8D6791C833B1700F9FBEA /* NFXSettingsController_OSX.swift */; };
 		B3F8D6841C833B1700F9FBEA /* NFXStatisticsController_OSX.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F8D67A1C833B1700F9FBEA /* NFXStatisticsController_OSX.swift */; };
+		B87BBA831E507825000AE07D /* NFXStringEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87BBA821E507825000AE07D /* NFXStringEncoder.swift */; };
+		B87BBA841E507825000AE07D /* NFXStringEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87BBA821E507825000AE07D /* NFXStringEncoder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +98,7 @@
 		B3F8D6781C833B1700F9FBEA /* NFXResponseTypeCell_OSX.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NFXResponseTypeCell_OSX.xib; sourceTree = "<group>"; };
 		B3F8D6791C833B1700F9FBEA /* NFXSettingsController_OSX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFXSettingsController_OSX.swift; sourceTree = "<group>"; };
 		B3F8D67A1C833B1700F9FBEA /* NFXStatisticsController_OSX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFXStatisticsController_OSX.swift; sourceTree = "<group>"; };
+		B87BBA821E507825000AE07D /* NFXStringEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFXStringEncoder.swift; sourceTree = "<group>"; };
 		E20FD2E91C6912D400DCFF61 /* netfox_osx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = netfox_osx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -154,6 +157,7 @@
 				B3F8BA7F1C833ABC00F9FBEA /* NFXSettingsController.swift */,
 				B3F8BA801C833ABC00F9FBEA /* NFXStatisticsController.swift */,
 				B3F8BA811C833ABC00F9FBEA /* NFXWindowController.swift */,
+				B87BBA821E507825000AE07D /* NFXStringEncoder.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -318,6 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B87BBA831E507825000AE07D /* NFXStringEncoder.swift in Sources */,
 				B3F8BA821C833ABC00F9FBEA /* NFX.swift in Sources */,
 				B3F8BA8A1C833ABC00F9FBEA /* NFXGenericBodyDetailsController.swift in Sources */,
 				B3F8BA901C833ABC00F9FBEA /* NFXHTTPModel.swift in Sources */,
@@ -349,6 +354,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B87BBA841E507825000AE07D /* NFXStringEncoder.swift in Sources */,
 				B3F8BA831C833ABC00F9FBEA /* NFX.swift in Sources */,
 				B3F8D67E1C833B1700F9FBEA /* NFXListCell_OSX.swift in Sources */,
 				B3F8BA8B1C833ABC00F9FBEA /* NFXGenericBodyDetailsController.swift in Sources */,

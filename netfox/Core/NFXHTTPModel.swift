@@ -88,7 +88,7 @@ class NFXHTTPModel: NSObject
     
     func saveRequestBodyData(_ data: Data)
     {
-        let tempBodyString = NSString.init(data: data, encoding: String.Encoding.utf8.rawValue)
+        let tempBodyString = NFXStringEncoder.string(data)
         self.requestBodyLength = data.count
         if (tempBodyString != nil) {
             saveData(tempBodyString!, toFile: getRequestBodyFilepath())
@@ -103,7 +103,7 @@ class NFXHTTPModel: NSObject
             bodyString = data.base64EncodedString(options: .endLineWithLineFeed) as NSString?
 
         } else {
-            if let tempBodyString = NSString.init(data: data, encoding: String.Encoding.utf8.rawValue) {
+            if let tempBodyString = NFXStringEncoder.string(data) {
                 bodyString = tempBodyString
             }
         }
@@ -123,7 +123,7 @@ class NFXHTTPModel: NSObject
                 return output as NSString
             }
         }
-        return NSString(data: rawData, encoding: String.Encoding.utf8.rawValue) ?? ""
+        return NFXStringEncoder.string(rawData) ?? ""
     }
 
     func getRequestBody() -> NSString
@@ -234,7 +234,7 @@ class NFXHTTPModel: NSObject
             do {
                 let rawJsonData = try JSONSerialization.jsonObject(with: rawData, options: [])
                 let prettyPrintedString = try JSONSerialization.data(withJSONObject: rawJsonData, options: [.prettyPrinted])
-                return NSString(data: prettyPrintedString, encoding: String.Encoding.utf8.rawValue) as? String
+                return NFXStringEncoder.string(prettyPrintedString) as? String
             } catch {
                 return nil
             }
